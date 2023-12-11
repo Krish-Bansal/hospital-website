@@ -107,13 +107,15 @@
 function sendMessage() {
   // Replace the following placeholders with your actual phone number and message
   var phoneNumber = '+9779813783811'; // The recipient's phone number with the country code
+  var phoneNumber1 = '6792388544173629'; // The recipient's phone number with the country code
+
   var message = 'Hello! I would like to book an appointment.';
 
   // Form the URL for WhatsApp deep link
   var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
 
   // Form the URL for Messenger deep link
-  var messengerUrl = 'https://m.me/' + phoneNumber;
+  var messengerUrl = 'https://m.me/' + phoneNumber1
 
   // Check if the user has WhatsApp installed, and open the deep link
   if (isWhatsAppInstalled()) {
