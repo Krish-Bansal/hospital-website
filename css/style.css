@@ -152,6 +152,11 @@
   /* transform: rotate(15deg); */
 }
 
+.team-item p {
+  color: rgb(57, 188, 57) !important;
+  display: none;
+}
+
 .service-item a.btn {
   position: absolute;
   width: 60px;
