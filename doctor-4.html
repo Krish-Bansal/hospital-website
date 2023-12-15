@@ -30,6 +30,23 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      /* Custom CSS */
+      .doctor-image {
+        width: 120%; /* Adjust the width percentage for zoom effect */
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+
+      .doctor-data {
+          color: navy;
+      }
+
+      .doctor-data strong::before {
+          content: '\2713\0020'; /* Unicode character for a tick mark and space */
+      }
+  </style>
   </head>
 
   <body>
@@ -111,38 +128,21 @@
 
     <div class="container mt-4">
       <div class="row">
-        <!-- Image column (col-6) on the left side -->
-        <div class="col-md-6">
-          <img src="./img/IMG_20230728_105016.jpg" alt="Doctor Image" class="img-fluid">
-        </div>
-
-        <!-- Data column (col-6) on the right side -->
-        <div class="col-md-6">
-          <h2 class="mt-3">Dr.Bal Kumar Kc</h2>
-          <p><strong>Subspeciality:</strong>
-            General Ophthalmologist
-            Experience and interest on SICS, phaco, Anterior segment, Glaucoma,
-            oculoplastic, Pediatric Ophth and Medical Retina</p>
-          <p><strong>Qualification:</strong> MBBS-TUTH IOM (1984AD)
-            MD Ophth.TUTH BPKLCOS (1993AD)</p>
-          <p><strong>Awards:</strong> SEVA PADAK- decorated by Late King Birendra(1988AD)
-
-            Daivikprakop Uddaroseva Padak- decorated by Late King
-            Birendra(1988AD)
-
-            Legion of Honor of Minisaraphon-decorated by Prime Minister of
-            Cambodia(2011AD)
-
-            ACOIN President Gold Plaque-2023
-            Bilaspur India
-
-            Silver Jubilee NOSCON Award-2023</p>
-          <!-- <p><strong>Specialization:</strong> Cardiology</p> -->
-          <!-- <p><strong>Contact:</strong> johndoe@example.com</p> -->
-          <!-- Add more information as needed -->
-        </div>
+          <!-- Image column (col-4) on the left side -->
+          <div class="col-md-4">
+              <img src="./img/IMG_20230728_105016.jpg" alt="Doctor Image" class="img-fluid doctor-image">
+          </div>
+  
+          <!-- Data column (col-8) on the right side -->
+          <div class="col-md-8 px-5">
+              <h2 class="mt-3">Dr. Bal Kumar Kc</h2>
+              <p class="doctor-data"><strong>Subspeciality:</strong> General Ophthalmologist, Experience and interest on SICS, phaco, Anterior segment, Glaucoma, oculoplastic, Pediatric Ophth, and Medical Retina</p>
+              <p class="doctor-data"><strong>Qualification:</strong> MBBS-TUTH IOM (1984AD) MD Ophth.TUTH BPKLCOS (1993AD)</p>
+              <p class="doctor-data"><strong>Awards:</strong> SEVA PADAK- decorated by Late King Birendra(1988AD) Daivikprakop Uddaroseva Padak- decorated by Late King Birendra(1988AD) Legion of Honor of Minisaraphon-decorated by Prime Minister of Cambodia(2011AD) ACOIN President Gold Plaque-2023 Bilaspur India Silver Jubilee NOSCON Award-2023</p>
+          </div>
       </div>
-    </div>
+  </div>
+  
 
 
     <!-- Footer Start -->
