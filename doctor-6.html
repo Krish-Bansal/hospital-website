@@ -41,11 +41,20 @@
 
       .doctor-data {
           color: navy;
+          /* overflow:auto; */
+          /* overflow-wrap: break-word; */
+          /* word-wrap: break-word; */
       }
-
-      .doctor-data strong::before {
-          content: '\2713\0020'; /* Unicode character for a tick mark and space */
-      }
+      .doctor-data h5 {
+    /* white-space: normal; */
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  li{
+    margin-bottom: 5px;
+  }
+  
   </style>
   </head>
 
@@ -128,35 +137,59 @@
 
     <div class="container mt-4">
       <div class="row">
-          <!-- Image column (col-4) on the left side -->
-          <div class="col-md-4">
-              <img src="./img/WhatsApp Image 2023-10-29 at 10.21.16_99f20bee.jpg" alt="Doctor Image" class="img-fluid doctor-image">
-          </div>
-  
-          <!-- Data column (col-8) on the right side -->
-          <div class="col-md-8 px-5">
-              <h2 class="mt-3">Dr. Anandi Khatri</h2>
-              <p class="doctor-data"><strong>Subspeciality:</strong> General Ophthalmologist, Ocular immunology (UVEA), Medical and Surgical Retina, Opthalmic Trauma, Clinical Trials, Phacosurgery and Retinal Imaging</p>
-              <p class="doctor-data"><strong>Qualification:</strong>
-                  MBBS- (KU)
-                  MD Ophth. (IOM,TUTH)
-                  VITREORETINA SURGERY (LEIRC , NAMS)
-                  MEDICAL RETINA AND UVEA (STANFORD UNIVERSITY)
-              </p>
-              <p class="doctor-data"><strong>Awards:</strong>
-                  SAO best poster (Green laser in CSCR) 2018
-                  Korean Ophthalmological Society AWARD (AUTOFLUROSCENCE IN SERPIGINOUS CHOROIDITIS) 2019
-                  AAO International Ophthalmologists Contest Winner (SHAPU) (2019)
-                  XOVA-NOVARTIS-Diabetic Retinopathy Screening (2019)
-                  Global Ophthalmology Award Program (GOAP) - BAYER - SHAPU BIOMARKERS (2019)
-                  Japanese Ophthalmological Society Young Investigator Award (VORTEX VEIN DECOMPRESSION) (2020)
-                  Developing Country Eye Research Fellow ARVO (2021)
-                  Real World Ophthalmology Impactful Research Award (USE OF OCT ANGIOGRAPHY IN EARLY DIAGNOSIS OF DIABETIC RETINOPATHY) (2022)
-              </p>
-          </div>
+        <!-- Image column (col-4) on the left side -->
+        <div class="col-md-4 text-center">
+          <img src="./img/WhatsApp Image 2023-10-29 at 10.21.16_99f20bee.jpg" alt="Doctor Image" class="img-fluid doctor-image">
+          <h2 class="mt-3 doctor-data">Dr.Anandi Khatri</h2>
+        </div>
+    
+        <!-- Data column (col-8) on the right side -->
+        <div class="col-md-8 px-[5%]">
+          <table class="table doctor-data">
+          </tr>
+          <tr>
+            <th> <h5 class="doctor-data">Qualification:</h5></th>
+            <td>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-navy"></i> MBBS- (KU) </li>
+                <li><i class="fas fa-check-circle text-navy"></i>MD Ophth. (IOM,TUTH)
+                </li>
+                <li><i class="fas fa-check-circle text-navy"></i> Vitro-retina Surgery (LEIRC , NAMS)</li>
+                <li><i class="fas fa-check-circle text-navy"></i>MEDICAL RETINA AND UVEA (STANFORD UNIVERSITY)</li>
+                <!-- <li><i class="fas fa-check-circle text-navy"></i> FICO (Fellow of the International Council of Ophthalmology) UK</li> -->
+                <!-- <li><i class="fas fa-check-circle text-navy"></i> Training in ROP (2016): L V Prasad Eye Hospital and KIDROP project, India</li> -->
+              </ul>
+            </td>
+          </tr>
+            <tr>
+              <th><h5 class="doctor-data">Subspeciality:</h5></th>
+              <td>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i>General Opthalmologist,Ocular immunology (UVEA),Medical and Surgical Retina,Opthalmic Trauma,Clinical Trials,Phacosurgery and Retinal Imaging</li>
+                </ul>
+              </td>
+            
+            <tr>
+              <th> <h5 class="doctor-data">Awards:</h5></th>
+              <td>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i>SAO best poster (Green laser in CSCR) 2018</li>
+                  <li><i class="fas fa-check-circle text-navy"></i>Korean Ophthalmological Society AWARD (AUTOFLUROSCENCE IN SERPIGINOUS CHOROIDITIS) 2019
+                  </li>
+                  <li><i class="fas fa-check-circle text-navy"></i>AAO International Ophthalmologists Contest Winner (SHAPU) (2019)</li>
+                  <li><i class="fas fa-check-circle text-navy"></i>XOVA-NOVARTIS-Diabetic Retinopathy Screening (2019) </li>
+                  <li><i class="fas fa-check-circle text-navy"></i>Global Ophthalmology Award Program (GOAP) - BAYER - SHAPU BIOMARKERS (2019) </li>
+                  <li><i class="fas fa-check-circle text-navy"></i>Japanese Ophthalmological Society Young Investigator Award (VORTEX VEIN DECOMPRESSION) (2020)</li>
+                  <li><i class="fas fa-check-circle text-navy"></i>Developing Country Eye Research Fellow ARVO (2021) </li>
+                  <li><i class="fas fa-check-circle text-navy"></i>Real World Ophthalmology Impactful Research Award (USE OF OCT ANGIOGRAPHY IN EARLY DIAGNOSIS OF DIABETIC RETINOPATHY) (2022)</li>
+
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-  </div>
-  
+    </div>
 
 
     <!-- Footer Start -->

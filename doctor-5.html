@@ -41,11 +41,20 @@
 
       .doctor-data {
           color: navy;
+          /* overflow:auto; */
+          /* overflow-wrap: break-word; */
+          /* word-wrap: break-word; */
       }
-
-      .doctor-data strong::before {
-          content: '\2713\0020'; /* Unicode character for a tick mark and space */
-      }
+      .doctor-data h5 {
+    /* white-space: normal; */
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  li{
+    margin-bottom: 5px;
+  }
+  
   </style>
   </head>
 
@@ -128,22 +137,45 @@
 
     <div class="container mt-4">
       <div class="row">
-          <!-- Image column (col-4) on the left side -->
-          <div class="col-md-4">
-              <img src="./img/IMG_20230728_091406.jpg" alt="Doctor Image" class="img-fluid doctor-image">
-          </div>
+        <!-- Image column (col-4) on the left side -->
+        <div class="col-md-4 text-center">
+          <img src="./img/IMG_20230728_091406.jpg" alt="Doctor Image" class="img-fluid doctor-image">
+          <h2 class="mt-3 doctor-data">Dr.Satish Timalsena</h2>
+        </div>
+    
+        <!-- Data column (col-8) on the right side -->
+        <div class="col-md-8 px-[5%]">
+          <table class="table doctor-data">
+            <tr>
+              <th> <h5 class="doctor-data">Qualification:</h5></th>
+              <td>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i> MBBS—Chongqing Medical University, China (2003)</li>
+                  <li><i class="fas fa-check-circle text-navy"></i> MD—Yangtze University, China (2013)
+                  </li>
+                  <li><i class="fas fa-check-circle text-navy"></i> Fellowship in Oculoplasty Mechi Eye Hospital, Birtamode BPKLCOS</li>
+                  <li><i class="fas fa-check-circle text-navy"></i> Tribhuwan University Teaching Hospital, Kathmandu (2022)</li>
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> FICO (Fellow of the International Council of Ophthalmology) UK</li> -->
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> Training in ROP (2016): L V Prasad Eye Hospital and KIDROP project, India</li> -->
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th><h5 class="doctor-data">Subspeciality:</h5></th>
+              <td>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i>General Opthalmologist,Oculoplastic,Phaco surgeon</li>
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i></li>
+                  <li><i class="fas fa-check-circle text-navy"></i></li> -->
   
-          <!-- Data column (col-8) on the right side -->
-          <div class="col-md-8 px-5">
-              <h2 class="mt-3">Dr. Satish Timalsena</h2>
-              <p class="doctor-data"><strong>Subspeciality:</strong> General Ophthalmologist, Oculoplastic, and Phaco surgeon</p>
-              <p class="doctor-data"><strong>Qualification:</strong> MBBS—Chongqing Medical University, China (2003)
-                  MD—Yangtze University, China (2013)
-                  Fellowship in Oculoplasty Mechi Eye Hospital, Birtamode BPKLCOS, Tribhuwan University Teaching Hospital, Kathmandu (2022)
-              </p>
-          </div>
+                </ul>
+              </td>
+            </tr>
+          
+          </table>
+        </div>
       </div>
-  </div>
+    </div>
   
 
 

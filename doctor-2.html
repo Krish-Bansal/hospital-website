@@ -41,11 +41,20 @@
 
       .doctor-data {
           color: navy;
+          /* overflow:auto; */
+          /* overflow-wrap: break-word; */
+          /* word-wrap: break-word; */
       }
-
-      .doctor-data strong::before {
-          content: '\2713\0020'; /* Unicode character for a tick mark and space */
-      }
+      .doctor-data h5 {
+    /* white-space: normal; */
+    /* overflow-wrap: break-word;
+    word-wrap: break-word; */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  li{
+    margin-bottom: 5px;
+  }
+  
   </style>
   </head>
 
@@ -128,22 +137,43 @@
 
     <div class="container mt-4">
       <div class="row">
-          <!-- Image column (col-4) on the left side -->
-          <div class="col-md-4">
-              <img src="./img/WhatsApp Image 2023-10-02 at 08.39.12_41cfe1d7.jpg" alt="Doctor Image" class="img-fluid doctor-image">
-          </div>
-  
-          <!-- Data column (col-8) on the right side -->
-          <div class="col-md-8 px-5">
-              <h2 class="mt-3">Dr. Shradha Kc</h2>
-              <p class="doctor-data"><strong>Subspeciality:</strong> General Ophthalmologist</p>
-              <p class="doctor-data"><strong>Qualification:</strong> MBBS Kathmandu Medical college, 2014
-                  MD Ophthalmologist, Nepal medical college 2021
-              </p>
-          </div>
+        <!-- Image column (col-4) on the left side -->
+        <div class="col-md-4 text-center">
+          <img src="./img/WhatsApp Image 2023-10-02 at 08.39.12_41cfe1d7.jpg" alt="Doctor Image" class="img-fluid doctor-image">
+          <h2 class="mt-3 doctor-data">Dr.Shradha Kc</h2>
+        </div>
+    
+        <!-- Data column (col-8) on the right side -->
+        <div class="col-md-8 px-[5%]">
+          <table class="table doctor-data">
+            <tr>
+              <th> <h5 class="doctor-data">Qualification:</h5></th>
+              <td class="">
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i> MBBS Kathmandu Medical college,</li>
+                  <li><i class="fas fa-check-circle text-navy"></i> 2014 MD Ophthalmologist, Nepal medical college 2021</li>
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> Fellowship in Vitreo-retina (2013): Biratnagar eye hospital, EREC-P, Biratnagar, Nepal</li> -->
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> Mini fellowship (2015): 14th European Vitreoretinal training school, Bremen, Germany</li> -->
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> Management training in eye care priorities (2016): at LAICO, Madurai, India.</li> -->
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i> Training in ROP (2016): L V Prasad Eye Hospital and KIDROP project, India</li> -->
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th><h5 class="doctor-data">Subspeciality:</h5></th>
+              <td>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-navy"></i>General Opthalmologist</li>
+                  <!-- <li><i class="fas fa-check-circle text-navy"></i>Vitreo-retina consultant</li> -->
+                </ul>
+              </td>
+            </tr>
+          
+          </table>
+        </div>
       </div>
-  </div>
-  
+    </div>
+
 
 
     <!-- Footer Start -->
